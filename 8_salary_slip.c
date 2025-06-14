@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-    float id,bs,hr=10,da=30,tax=5,ts;
+    float id,bs,hra=10,da=30,tax=5,totalsalary;
     // bs=base salary,hr=house rent,
     // da=dearness allowance,ts=total in hand salary
     char ename;
@@ -12,7 +12,8 @@ int main()
     scanf("%s", &ename);
     printf("\nEnter employee base salary:");
     scanf("%f",&bs);
-    ts=bs+(bs*(hr+da-tax)/100);
-    printf("\ntotal salary of employee=%d",ts);
+    totalsalary=bs+(bs*(da+hra-tax)/100);
+    printf("total salary of employee is:%f",&totalsalary);
     return 0;
 }
+    
